@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" prefHeight="685.0" prefWidth="868.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ee.mandra.d4s.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-    </padding>
+<ScrollPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ee.mandra.d4s.HelloController">
+   <content>
+      <Pane maxHeight="524.0" maxWidth="782.0" minHeight="282.0" minWidth="411.0" prefHeight="524.0" prefWidth="782.0">
+         <children>
+         
+                <Label fx:id="welcomeText" layoutX="71.0" layoutY="23.0" prefHeight="39.0" prefWidth="41.0" />
+            <ImageView fx:id="Shout" fitHeight="76.0" fitWidth="81.0" layoutX="233.0" layoutY="152.0" onMouseClicked="#onMouseButtonClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Shout.png" />
+               </image>
+            </ImageView>
 
-    <Label fx:id="welcomeText" />
-    <Button onAction="#onHelloButtonClick" fx:id="Button1" prefHeight="74.0" prefWidth="86.0" text="Hello!" />
-</VBox>
+         </children>
+      </Pane>
+   </content>
+</ScrollPane>
